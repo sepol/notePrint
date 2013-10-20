@@ -1,15 +1,15 @@
-# clusterValues
-# Clusters the values in an input vector based on a defined bound
-#
-# function v = clusterValues(in,bound)
-#
-# Inputs:
-#	in: The input vector
-#	bound: Allows a custom bound for clustering to be given
-#
-# Outputs:
-#	v: The resulting vector with clustered values
-#
+% clusterValues
+% Clusters the values in an input vector based on a defined bound
+%
+% function v = clusterValues(in,bound)
+%
+% Inputs:
+%	in: The input vector
+%	bound: Allows a custom bound for clustering to be given
+%
+% Outputs:
+%	v: The resulting vector with clustered values
+%
 
 function v = clusterValues(in,bound)
 	if nargin < 2

@@ -1,15 +1,15 @@
-# noteName
-# Function to generate the note and cents for a given frequency
-#
-# function [n,c] = noteName(f)
-#
-# Inputs:
-# 	f: The frequency that needs to be mapped to a note
-#
-# Outputs:
-#	n: The note name for the frequency
-#	c: The cents for the frequency
-#
+% noteName
+% Function to generate the note and cents for a given frequency
+%
+% function [n,c] = noteName(f)
+%
+% Inputs:
+% 	f: The frequency that needs to be mapped to a note
+%
+% Outputs:
+%	n: The note name for the frequency
+%	c: The cents for the frequency
+%
 
 function [n,c] = noteName(f)
 	n = 0;
