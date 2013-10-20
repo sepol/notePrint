@@ -34,7 +34,7 @@ for k = spb+1:spb:length(X)
 			for j = 1:length(tones(:,1))
 				r = tones(j,1)-10:tones(j,1)+10;
 				if max(ismember(r,lastTones(:,1)))
-					index = find(lastTones(:,1) == r(find(ismember(r,lastTones(:,1)))))(1,1);
+					index = find(lastTones(:,1) == r(find(ismember(r,lastTones(:,1)))))(1);
 					tones(j,2) = lastTones(index,2) + 1;
 					lastTones(index,:) = [];
 				end
@@ -51,9 +51,9 @@ for k = spb+1:spb:length(X)
 				fprintf(out,'Note: %s and %.3f cents\n\n',note,cents);
 			end
 		end
-	o = [o;zeros(spb,1)];
 	lastTones = tones;
 	end
+	o = [o;zeros(spb,1)];
 end
 if ~isempty(lastTones)
 	fprintf(out, '----------\nLast Beat\n');
